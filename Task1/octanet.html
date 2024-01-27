@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Landing page</title>
+        <link rel="stylesheet" href="octanet.css">
+        <link rel="icon" href=
+        "logo1-removebg-preview.png"
+                  type="image">
+    </head>
+    <body>
+       <section>
+        <div class="circle"></div>
+        <div class="circle1"></div>
+
+        <header>
+           <a href="#" ><img src="logo3.png" class="logo" ></a>
+           <ul>
+            <li><a href="#" class="link-1">Home</a></li>
+            <li><a href="#" class="link-1">Menu</a></li>
+            <li><a href="#" class="link-1">Burgers</a></li>
+            <li><a href="#" class="link-1">About Us</a></li>
+            <li><a href="#" class="link-1">Contact Us</a></li>
+           </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2 class="fst"><b>TASTY<span>NEW</span></b><br></h2><h2 class="log"><b>BURGER</b></h2>
+                <p>Welcome to our Burger Paradise.Where every bite is a journey into flavour perfection!
+                    Indulge in a symphony of premium ingredients,expertly srafted patties and mouthwatering sauces.
+                    Your adventure into burger bliss begins here!</p>
+                <a href="#">Order now</a>
+            </div>
+            <div class="imgBox">
+                <img src="p22.jpg" class="pizza1" class="rounded-fluid">
+            </div>
+        </div>  
+        
+        <ul class="thumb">
+            <li><img src="p15.jpeg" onclick="imgslider('p15.jpeg');changecolor('#30475E')"></li>
+            <li><img src="p14.jpeg" onclick="imgslider('p14.jpeg');changecolor('#FFE15D')"></li>
+            <li><img src="p22.jpg" onclick="imgslider('p22.jpg');changecolor('#0E8388')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="facebook.png"></a></li>
+            <li><a href="#"><img src="twitter.png"></a></li>
+            <li><a herf="#"><img src="instagram.png"></a></li>
+        </ul>
+       </section>
+       <script type="text/javascript">
+        function imgslider(anything)
+        {
+            document.querySelector('.pizza1').src=anything;
+        }
+        function changecolor(color){
+            const circle=document.querySelector('.circle');
+            circle.style.background=color;
+            const circle1=document.querySelector('.circle1');
+            circle1.style.background=color;
+        }
+       </script>
+    </body>
+</html>
